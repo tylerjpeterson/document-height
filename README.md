@@ -8,7 +8,7 @@
 Install via npm.
 
 ```sh
-$ npm i document-height -save
+$ npm i document-height --save
 ```
 
 ## Usage
