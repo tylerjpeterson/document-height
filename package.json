@@ -1,0 +1,49 @@
+{
+  "name": "document-height",
+  "version": "1.0.0",
+  "description": "Get the height of the document, across browsers.",
+  "author": "Tyler Peterson <tylerjpeterson@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p tmp/ && browserify -r -t [ browserify-istanbul ] ./index.js --standalone docHeight > tmp/document-height.debug.js",
+    "coverage": "node test/test.cli.js && istanbul report --root coverage lcov",
+    "test": "open test/spec/index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "browserify-istanbul": "^2.0.0",
+    "chai": "^3.4.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^2.3.4",
+    "mocha-phantomjs": "^4.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/tylerjpeterson/document-height/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tylerjpeterson/document-height"
+  },
+  "homepage": "https://github.com/tylerjpeterson/document-height",
+  "contributors": [
+    ""
+  ],
+  "xo": {
+    "globals": [
+      "document",
+      "window",
+      "require",
+      "module"
+    ]
+  },
+  "keywords": [
+    "document",
+    "height",
+    "measure"
+  ],
+  "engines": {
+    "node": ">=0.10.3"
+  },
+  "license": "MIT"
+}
