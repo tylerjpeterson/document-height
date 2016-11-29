@@ -1,6 +1,6 @@
 {
   "name": "document-height",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get the height of the document, across browsers.",
   "author": "Tyler Peterson <tylerjpeterson@gmail.com>",
   "main": "index.js",
